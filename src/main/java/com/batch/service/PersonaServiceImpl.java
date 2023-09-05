@@ -10,7 +10,7 @@ import com.batch.model.Persona;
 import com.batch.repository.IPersonaDAO;
 
 @Service
-//@Transactional
+@Transactional
 public class PersonaServiceImpl implements IPersonaService {
 
 	@Autowired
