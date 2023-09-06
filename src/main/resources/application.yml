@@ -1,10 +1,17 @@
 spring:
   batch:
+    #Deshabilitamos que se ejecute el job automaticamente al iniciar la aplicación
     job:
       enabled: false
+    #Crea automaticamente las tablas del job repository, son tablas de SpringBatch
     jdbc:
       initialize-schema: always
+  sql:
+    #Se define con que base de datos se va a trabajar, es opcional
+    init:
+      platform: h2
   jpa:
+    #Crea/actualiza las tablas del package.model de forma automatica
     hibernate:
       ddl-auto: update
   servlet:
