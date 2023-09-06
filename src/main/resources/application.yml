@@ -3,7 +3,7 @@ spring:
     #Deshabilitamos que se ejecute el job automaticamente al iniciar la aplicación
     job:
       enabled: false
-    #Crea automaticamente las tablas del job repository, son tablas de SpringBatch
+    #Crea automaticamente las tablas del job repository (tablas de SpringBatch) en la BBDD
     jdbc:
       initialize-schema: always
   sql:
